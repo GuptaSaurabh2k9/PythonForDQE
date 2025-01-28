@@ -38,7 +38,7 @@ def merge_dic(dict_list):
 random_dict = generate_random_number()
 # print('random_dict:',random_dict)
 f_dict = merge_dic(random_dict)
-print('f_dict',f_dict)
+print('hometask 2 f_dict',f_dict)
 
 import re
 
@@ -71,7 +71,7 @@ input_str = """homEwork:
 """
 
 x = normalize_txt(input_str)
-print('final_txt:',x)
+print('Hometask 3 final_txt:',x)
 
 whitespace_count = count_whitespace(x)
 print(f"Number of whitespace characters: {whitespace_count}")
