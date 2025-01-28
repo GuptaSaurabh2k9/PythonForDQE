@@ -29,7 +29,7 @@ for i in range(num_dict):
 
     # 5: append the dic to the final list
     fnl_dict_list.append(random_dict)
-print(fnl_dict_list)
+print('step1',fnl_dict_list)
 
 # 2. get previously generated list of dicts and create one common dict:
 #

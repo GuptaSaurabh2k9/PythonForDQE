@@ -10,35 +10,35 @@
 # Each line of code should be commented with description.
 #
 # Commit script to git repository and provide link as home task result.
-#
-# import random as r
-#
-# def generate_random_number():
-#     number_dict = r.randint(2,10)
-#     dic_list = []
-#
-#     for i in range(number_dict):
-#         num_keys = r.randint(0,25)
-#         rand_dict = {chr(97+r.randint(0,25)):r.randint(0,100) for key in range(num_keys)}
-#         dic_list.append(rand_dict)
-#     return dic_list
-#
-# def merge_dic(dict_list):
-#     m_dict = {}
-#     for i in range(len(dict_list)):
-#         for k,v in dict_list[i].items():
-#             if k in m_dict:
-#                 if v > m_dict[k][1]:
-#                     m_dict[k] = (f"{k}_{i+1}",v)
-#             else:
-#                 m_dict[k] = (k,v)
-#     fnl_dict = {val[0]:val[1] for val in m_dict.values()}
-#     return fnl_dict
-#
-# random_dict = generate_random_number()
-# # print('random_dict:',random_dict)
-# f_dict = merge_dic(random_dict)
-# print('f_dict',f_dict)
+
+import random as r
+
+def generate_random_number():
+    number_dict = r.randint(2,10)
+    dic_list = []
+
+    for i in range(number_dict):
+        num_keys = r.randint(0,25)
+        rand_dict = {chr(97+r.randint(0,25)):r.randint(0,100) for key in range(num_keys)}
+        dic_list.append(rand_dict)
+    return dic_list
+
+def merge_dic(dict_list):
+    m_dict = {}
+    for i in range(len(dict_list)):
+        for k,v in dict_list[i].items():
+            if k in m_dict:
+                if v > m_dict[k][1]:
+                    m_dict[k] = (f"{k}_{i+1}",v)
+            else:
+                m_dict[k] = (k,v)
+    fnl_dict = {val[0]:val[1] for val in m_dict.values()}
+    return fnl_dict
+
+random_dict = generate_random_number()
+# print('random_dict:',random_dict)
+f_dict = merge_dic(random_dict)
+print('f_dict',f_dict)
 
 import re
 
