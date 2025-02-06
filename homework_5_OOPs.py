@@ -44,10 +44,10 @@ class NewsFeed:
         return f"News | {date} | {city} | {text}\n"
 
     def add_advt(self, text, exp_date):
-        # user_date = datetime.datetime.strptime(user_input,"%Y-%m-%d")
+        user_date = datetime.datetime.strptime(exp_date,"%Y-%m-%d")
         current_date = datetime.datetime.now()
-        exp_days = (exp_date-current_date).days
-        return f"Advertisement | Days Left: {exp_days} | {city} | {text}\n"
+        exp_days = (user_date-current_date).days
+        return f"Advertisement | Days Left: {exp_days} | {text}\n"
 
     def add_event(self, event_detail, place):
         event_date = datetime.datetime.now().strftime("%Y-%m-%d")
