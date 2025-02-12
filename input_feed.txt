@@ -1,0 +1,5 @@
+News | Karnal | Breaking News of Karnal
+News | Kanral | Breaking News 2
+Event | Karnal | Birthday Party
+Advertisement | 2025-04-01 | Birthday
+ABC|data|txt
